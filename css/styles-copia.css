@@ -1,0 +1,102 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+header{
+    background-color: papayawhip;
+    position: sticky;
+    top: 0px;
+    border-bottom: solid 1px rgb(51, 51, 51);
+}
+nav{
+    margin: 0px 30px;
+
+}
+nav ul{
+    display:flex;
+    justify-content: start;
+    overflow-x: auto;
+    gap: 10px;
+    margin-top: 6px;
+}
+
+nav li{
+    font-family: 'Alkalami', serif;
+    font-size: 1.25rem;
+    padding: 5px;
+
+}
+li a{
+    color: rgb(51, 51, 51);
+
+}
+.titulo{
+    padding-top: 5px;
+}
+h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.3rem;
+    text-align: center;
+}
+h1 a{
+    color: black;
+}
+
+.data{
+    font-family: 'Abyssinica SIL', serif;
+    padding: 15px;
+}
+section{
+    background-color: rgba(51, 51, 51, 0.753);
+    margin: 20px 0px;
+}
+h2{
+    color: white;
+    text-align: center;
+}
+.tarjetas{
+    padding: 10px;
+    display: flex;
+    overflow: auto;
+    gap: 15px;
+}
+article{
+    background-color: papayawhip;
+    border: solid 2px;
+    padding: 15px 30px;
+    text-align: center;
+}
+article h2{
+    color: rgb(51, 51, 51);
+    margin-bottom: 5px;
+}
+.tarjeta__img{
+    height: 225px;
+    width: 150px;
+    border: solid 1px;
+
+}
+
+.tarjeta__precio{
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.btn{
+    color: rgb(51, 51, 51);
+    font-size: 1.25rem;
+    border: solid 2px rgb(51, 51, 51);
+    background-color: wheat;
+    padding: 5px;
+    border-radius: 10px;
+}
+@media(min-width: 440px){
+    nav ul{
+        justify-content: space-evenly;
+    }
+}
