@@ -1,0 +1,54 @@
+header {
+    background-color: $color-secundario;
+    position: sticky;
+    top: 0px;
+    border-bottom: solid 1px rgb(51, 51, 51);
+}
+
+nav {
+    margin: 0px 30px;
+
+
+    ul {
+        display: flex;
+        justify-content: start;
+        overflow-x: auto;
+        gap: 10px;
+        margin-top: 6px;
+
+
+
+        li {
+            font-family: 'Alkalami', serif;
+            font-size: 1.25rem;
+            padding: 5px;
+
+
+            a {
+                color: $color-primario;
+
+            }
+        }
+    }
+}
+
+.titulo {
+    padding-top: 5px;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.3rem;
+    text-align: center;
+
+    a {
+        color: $color-primario;
+    }
+}
+
+
+@media(min-width: 440px){
+    nav ul{
+        justify-content: space-evenly;
+    }
+}

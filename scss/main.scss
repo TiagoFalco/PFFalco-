@@ -1,4 +1,11 @@
-h1{
-    color: red;
-    background-color: aquamarine;
-}
+@import "utils/variables";
+
+@import "base/reset";
+
+@import "layout/header";
+
+@import "componentes/tarjetas";  
+
+@import "componentes/botones";
+
+@import "pages/index";
