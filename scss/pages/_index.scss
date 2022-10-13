@@ -1,13 +1,19 @@
 .data {
     font-family: 'Abyssinica SIL', serif;
     padding: 15px;
+    // background-color: rgba(255, 255, 255, 0.693);
+    font-size: 1.25rem;
+    text-align: center;
+    &__base{
+        font-size: 1.75rem;
+    }
 }
 section{
-    background-color: rgba(51, 51, 51, 0.753);
+    background-color: rgba(0, 0, 0, 0.261);
     margin: 20px 0px;
 
     h2{
-    color: white;
+    color: $color-primario;
     text-align: center;
 }
 .scroll{

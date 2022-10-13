@@ -18,6 +18,12 @@ header {
   top: 0px;
   border-bottom: solid 1px rgb(51, 51, 51);
 }
+header .header__top {
+  display: none;
+}
+header .header__form {
+  display: none;
+}
 
 nav {
   margin: 0px 30px;
@@ -32,10 +38,13 @@ nav ul {
 nav ul li {
   font-family: "Alkalami", serif;
   font-size: 1.25rem;
-  padding: 5px;
+  margin: 5px;
 }
 nav ul li a {
   color: rgb(51, 51, 51);
+}
+nav ul .como-comprar {
+  min-width: 145px;
 }
 
 .titulo {
@@ -44,16 +53,56 @@ nav ul li a {
 
 h1 {
   font-family: "Dancing Script", cursive;
-  font-size: 2.3rem;
+  font-size: 2.8rem;
   text-align: center;
 }
 h1 a {
   color: rgb(51, 51, 51);
 }
 
-@media (min-width: 440px) {
+@media (min-width: 568px) {
   nav ul {
     justify-content: space-evenly;
+  }
+}
+@media (min-width: 768px) {
+  header .header__top {
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    padding: 4px 0px 4px 0px;
+    border-bottom: solid 1px rgb(51, 51, 51);
+  }
+}
+@media (min-width: 1200px) {
+  .header__bottom {
+    display: grid;
+    grid-template-columns: 8, 1fr;
+    grid-template-rows: 2fr;
+  }
+  .header__bottom .titulo {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+  .header__bottom .header__form {
+    display: block;
+    grid-column: 7/8;
+    margin-top: 5px;
+  }
+  .header__bottom .header__form form {
+    display: inline;
+    position: relative;
+  }
+  .header__bottom .header__form form input {
+    border-radius: 5px;
+  }
+  .header__bottom .header__form .btn-submit {
+    position: absolute;
+    right: 4px;
+  }
+  .header__bottom nav {
+    grid-column: 3/8;
+    grid-row: 2/3;
   }
 }
 article {
@@ -87,17 +136,29 @@ article h2 {
   border-radius: 10px;
 }
 
+.btn-submit {
+  background-image: url(../../herramientas/img/buscar.png);
+  width: 25px;
+  background-size: 20px;
+  background-repeat: round;
+}
+
 .data {
   font-family: "Abyssinica SIL", serif;
   padding: 15px;
+  font-size: 1.25rem;
+  text-align: center;
+}
+.data__base {
+  font-size: 1.75rem;
 }
 
 section {
-  background-color: rgba(51, 51, 51, 0.753);
+  background-color: rgba(0, 0, 0, 0.261);
   margin: 20px 0px;
 }
 section h2 {
-  color: white;
+  color: rgb(51, 51, 51);
   text-align: center;
 }
 section .scroll {

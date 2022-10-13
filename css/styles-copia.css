@@ -1,6 +1,4 @@
 *{
-
-
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
@@ -10,22 +8,3 @@ ul, ol{
 }
 a{    text-decoration: none;
 }
-
-
-section{
-    background-color: rgba(51, 51, 51, 0.753);
-    margin: 20px 0px;
-
-h2{
-    color: white;
-    text-align: center;
-}
-.tarjetas{
-    padding: 10px;
-    display: flex;
-    overflow: auto;
-    gap: 15px;
-}}
-
-
-
