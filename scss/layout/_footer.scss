@@ -122,29 +122,30 @@ footer {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-        }
+        
 
-        &__redes {
+        .footer__redes {
             height: auto;
             font-size: 1rem;
 
             ul {
                 display: flex;
                 flex-direction: column;
-                a{
+
+                a {
                     display: flex;
                     text-align: center;
-                
-                .bi{font-size: 1.5rem;
+
+                    .bi {
+                        font-size: 1.5rem;
+                    }
+
+                    p {
+                        display: block;
+                        font-size: 1.5rem;
+                    }
                 }
-                
-                    .p-redes{
-                    display: block;
-                    font-size: 1.5rem;
-                                }
-                            }
+            }
         }
-
-
-    }}
-}
+    }
+}}

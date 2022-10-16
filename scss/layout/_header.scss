@@ -3,14 +3,12 @@ header {
     position: sticky;
     top: 0px;
     border-bottom: solid 1px $color-primario;
+    z-index: 1;
 
     .header__top {
         display: none;
     }
 
-    .header__form {
-        display: none;
-    }
 }
 
 nav {
@@ -80,25 +78,6 @@ h1 {
             grid-row: 1/3;
         }
 
-        .header__form {
-            display: block;
-            grid-column: 7/8;
-            margin-top: 5px;
-
-            form {
-                display: inline;
-                position: relative;
-
-                input {
-                    border-radius: 5px;
-                }
-            }
-
-            .btn-submit {
-                position: absolute;
-                right: 4px;
-            }
-        }
 
         nav {
             grid-column: 3/8;

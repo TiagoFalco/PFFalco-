@@ -1,0 +1,25 @@
+.header__form {
+    display: none;
+}
+
+@media (min-width: 1200px) {
+    .header__form {
+        display: block;
+        grid-column: 7/8;
+        margin-top: 5px;
+
+        form {
+            display: inline;
+            position: relative;
+
+            input {
+                border-radius: 5px;
+            }
+        }
+
+        .btn-submit {
+            position: absolute;
+            right: 4px;
+        }
+    }
+}

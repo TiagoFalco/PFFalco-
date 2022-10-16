@@ -18,8 +18,9 @@ section{
 .scroll{
     padding: 10px;
     display: flex;
-    overflow: auto;
-    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
     h2{
         color: $color-primario
     }
