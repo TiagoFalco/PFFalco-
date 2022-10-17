@@ -1,0 +1,29 @@
+section {
+    background-color: rgba(0, 0, 0, 0.261);
+    margin: 20px 0px;
+
+    h2 {
+        color: $color-primario;
+        text-align: center;
+    }
+
+    .scroll {
+        display: flex;
+        gap: 15px;
+        padding: 10px;
+        overflow: auto;
+
+        h2 {
+            color: $color-primario
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    section {
+        .scroll {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+    }
+}

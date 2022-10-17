@@ -24,7 +24,7 @@ header .header__top {
 }
 
 nav {
-  margin: 0px 30px;
+  margin: 0px 15px;
 }
 nav ul {
   display: flex;
@@ -130,7 +130,7 @@ footer {
 }
 .footer__bottom p {
   padding: 5px;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
 }
 .footer__bottom p a {
   font-weight: 800;
@@ -405,14 +405,40 @@ section h2 {
   color: rgb(51, 51, 51);
   text-align: center;
 }
-section .scroll {
+section .galeria {
   padding: 10px;
   display: flex;
+  gap: 15px;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+section .galeria h2 {
+  color: rgb(51, 51, 51);
+}
+
+section {
+  background-color: rgba(0, 0, 0, 0.261);
+  margin: 20px 0px;
+}
+section h2 {
+  color: rgb(51, 51, 51);
+  text-align: center;
+}
+section .scroll {
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+  overflow: auto;
+}
 section .scroll h2 {
   color: rgb(51, 51, 51);
+}
+
+@media (min-width: 1200px) {
+  section .scroll {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
