@@ -2,6 +2,34 @@
     display: none;
 }
 
+
+.formulario {
+    label {
+        font-size: 1.2rem;
+    }
+
+    p {
+        color: $color-primario;
+        font-size: 1.4rem;
+    }
+
+    input {
+        color: $color-primario;
+        font-size: 1.1rem;
+    }
+
+    label {
+        color: $color-primario;
+    }
+
+    textarea {
+        color: $color-primario;
+        resize: none;
+        width: 100%;
+        font-size: 1.1rem;
+    }
+}
+
 @media (min-width: 1200px) {
     .header__form {
         display: block;
@@ -22,39 +50,4 @@
             right: 4px;
         }
     }
-}
-.form {
-    font-family: 'Raleway', sans-serif;
-    color: black;
-    width: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.formulario {
-    width: 50%;
-    height: auto;
-    background-color: rgba(255, 255, 255, 0.600);
-    margin: 20px;
-    padding: 10px;
-}
-
-.formulario p {
-    color: black;
-}
-
-.formulario input {
-    color: black;
-}
-
-.formulario label {
-    color: black;
-}
-
-.formulario textarea {
-    color: black;
-}
-
-.formulario__campos {
-    margin: 10px;
 }

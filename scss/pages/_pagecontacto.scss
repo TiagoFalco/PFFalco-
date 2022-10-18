@@ -1,0 +1,53 @@
+.titulo-de-contacto{
+text-align: center;
+background-color: rgba(0, 0, 0, 0.261);
+color: $color-primario;
+margin: 20px 20px;
+}
+.form {
+    color: $color-primario;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario {
+    width: auto;
+    height: auto;
+    background-color: $color-secundario;
+    margin: 20px;
+    padding: 10px;
+}
+
+.formulario__tipodeconsulta {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario__campos {
+    margin: 10px;
+}
+
+@media (min-width: 1200px) {
+    .form {
+        display: grid;
+        grid-template-columns: 2, 1fr;
+        grid-template-rows: 4, 1fr;
+        .formulario {
+            width: 47%;
+            grid-column: 1/2;
+        }
+        .fomulario-radio{
+            grid-row: 1/5;
+        }
+        .fomulario-nombre{
+            grid-row: 2/5;
+        }
+        .fomulario-mensaje{
+            grid-row: 3/5;
+        }
+        .fomulario-mail{
+            grid-row: 4/5;
+        }
+    }
+}

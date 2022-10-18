@@ -87,6 +87,16 @@ h1 a {
     grid-row: 2/3;
   }
 }
+section {
+  background-color: rgba(0, 0, 0, 0.261);
+  margin: 20px 0px;
+}
+
+@media (min-width: 1200px) {
+  section {
+    margin: 20px 30px;
+  }
+}
 footer {
   padding-top: 15px;
 }
@@ -212,6 +222,27 @@ footer {
   display: none;
 }
 
+.formulario label {
+  font-size: 1.2rem;
+}
+.formulario p {
+  color: rgb(51, 51, 51);
+  font-size: 1.4rem;
+}
+.formulario input {
+  color: rgb(51, 51, 51);
+  font-size: 1.1rem;
+}
+.formulario label {
+  color: rgb(51, 51, 51);
+}
+.formulario textarea {
+  color: rgb(51, 51, 51);
+  resize: none;
+  width: 100%;
+  font-size: 1.1rem;
+}
+
 @media (min-width: 1200px) {
   .header__form {
     display: block;
@@ -230,42 +261,6 @@ footer {
     right: 4px;
   }
 }
-.form {
-  font-family: "Raleway", sans-serif;
-  color: black;
-  width: auto;
-  display: flex;
-  flex-direction: column;
-}
-
-.formulario {
-  width: 50%;
-  height: auto;
-  background-color: rgba(255, 255, 255, 0.6);
-  margin: 20px;
-  padding: 10px;
-}
-
-.formulario p {
-  color: black;
-}
-
-.formulario input {
-  color: black;
-}
-
-.formulario label {
-  color: black;
-}
-
-.formulario textarea {
-  color: black;
-}
-
-.formulario__campos {
-  margin: 10px;
-}
-
 article a {
   text-decoration: none;
   color: rgb(51, 51, 51);
@@ -433,10 +428,6 @@ article a .tarjeta h2 {
   font-size: 1.75rem;
 }
 
-section {
-  background-color: rgba(0, 0, 0, 0.261);
-  margin: 20px 0px;
-}
 section h2 {
   color: rgb(51, 51, 51);
   text-align: center;
@@ -452,10 +443,6 @@ section .galeria h2 {
   color: rgb(51, 51, 51);
 }
 
-section {
-  background-color: rgba(0, 0, 0, 0.261);
-  margin: 20px 0px;
-}
 section h2 {
   color: rgb(51, 51, 51);
   text-align: center;
@@ -474,6 +461,60 @@ section .scroll h2 {
   section .scroll {
     flex-wrap: wrap;
     justify-content: space-evenly;
+  }
+}
+.titulo-de-contacto {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.261);
+  color: rgb(51, 51, 51);
+  margin: 20px 20px;
+}
+
+.form {
+  color: rgb(51, 51, 51);
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario {
+  width: auto;
+  height: auto;
+  background-color: papayawhip;
+  margin: 20px;
+  padding: 10px;
+}
+
+.formulario__tipodeconsulta {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario__campos {
+  margin: 10px;
+}
+
+@media (min-width: 1200px) {
+  .form {
+    display: grid;
+    grid-template-columns: 2, 1fr;
+    grid-template-rows: 4, 1fr;
+  }
+  .form .formulario {
+    width: 47%;
+    grid-column: 1/2;
+  }
+  .form .fomulario-radio {
+    grid-row: 1/5;
+  }
+  .form .fomulario-nombre {
+    grid-row: 2/5;
+  }
+  .form .fomulario-mensaje {
+    grid-row: 3/5;
+  }
+  .form .fomulario-mail {
+    grid-row: 4/5;
   }
 }
 
