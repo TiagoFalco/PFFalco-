@@ -23,3 +23,38 @@
         }
     }
 }
+.form {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario {
+    width: 50%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.600);
+    margin: 20px;
+    padding: 10px;
+}
+
+.formulario p {
+    color: black;
+}
+
+.formulario input {
+    color: black;
+}
+
+.formulario label {
+    color: black;
+}
+
+.formulario textarea {
+    color: black;
+}
+
+.formulario__campos {
+    margin: 10px;
+}
