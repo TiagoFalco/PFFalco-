@@ -9,6 +9,11 @@
     width: auto;
     display: flex;
     flex-direction: column;
+    p{
+        margin: 20px;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
 
     .form {
         color: $color-primario;
@@ -60,13 +65,13 @@
                 width: 600px;
                 height: 450px;
             }
-
+        }
             p {
-                font-size: 1.2rem;
+                width: 85%;
                 padding: 15px;
                 font-weight: 600;
             }
-        }
+        
     }
 }
 
@@ -77,25 +82,20 @@
         grid-template-rows: 4, 1fr;
 
         .form {
-            width: auto;
+            width: 45vw;
             grid-column: 1/2;
             grid-row: 1/5;
         }
-    }
-
+    
+}
     .mapa {
+        width: 80%;
         grid-column: 2/3;
         grid-row: 1/4;
 
         iframe {
-            width: 600px;
-            height: 450px;
-        }
-
-        p {
-            font-size: 1.2rem;
-            padding: 15px;
-            font-weight: 600;
+            width: 75%;
+            height: auto;
         }
     }
 }

@@ -475,6 +475,11 @@ section .scroll h2 {
   display: flex;
   flex-direction: column;
 }
+.contacto p {
+  margin: 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
 .contacto .form {
   color: rgb(51, 51, 51);
   width: auto;
@@ -516,8 +521,8 @@ section .scroll h2 {
     width: 600px;
     height: 450px;
   }
-  .contacto .mapa p {
-    font-size: 1.2rem;
+  .contacto p {
+    width: 85%;
     padding: 15px;
     font-weight: 600;
   }
@@ -529,23 +534,36 @@ section .scroll h2 {
     grid-template-rows: 4, 1fr;
   }
   .contacto .form {
-    width: auto;
+    width: 45vw;
     grid-column: 1/2;
     grid-row: 1/5;
   }
   .mapa {
+    width: 80%;
     grid-column: 2/3;
     grid-row: 1/4;
   }
   .mapa iframe {
-    width: 600px;
-    height: 450px;
+    width: 75%;
+    height: auto;
   }
-  .mapa p {
-    font-size: 1.2rem;
-    padding: 15px;
-    font-weight: 600;
-  }
+}
+.como-comprar {
+  color: rgb(51, 51, 51);
+  background-color: papayawhip;
+  font-size: 1.2rem;
+  font-family: "Alkalami", serif;
+}
+.como-comprar p {
+  margin: 20px;
+  font-weight: 400;
+}
+.como-comprar ul {
+  margin: 20px;
+}
+.como-comprar ul li {
+  list-style: disc;
+  margin-left: 40px;
 }
 
 /*# sourceMappingURL=styles.css.map */

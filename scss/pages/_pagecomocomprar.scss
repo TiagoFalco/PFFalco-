@@ -1,0 +1,17 @@
+.como-comprar {
+    color: $color-primario;
+    background-color: $color-secundario;
+    font-size: 1.2rem;
+    font-family: 'Alkalami', serif;
+
+    p {
+        margin: 20px;
+        font-weight: 400;
+    }
+    ul{
+        margin: 20px;
+    li {
+        list-style: disc;
+        margin-left: 40px;
+    }
+}}
