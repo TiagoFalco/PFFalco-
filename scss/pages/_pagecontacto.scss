@@ -1,53 +1,101 @@
-.titulo-de-contacto{
-text-align: center;
-background-color: rgba(0, 0, 0, 0.261);
-color: $color-primario;
-margin: 20px 20px;
-}
-.form {
+.titulo-de-contacto {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.261);
     color: $color-primario;
+    margin: 20px 20px;
+}
+
+.contacto {
     width: auto;
     display: flex;
     flex-direction: column;
+
+    .form {
+        color: $color-primario;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+
+
+        .formulario {
+            width: auto;
+            height: auto;
+            background-color: $color-secundario;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        .formulario__tipodeconsulta {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .formulario__campos {
+            margin: 10px;
+        }
+    }
+
+    .mapa {
+        margin: 20px;
+        align-items: center;
+        text-align: center;
+
+        iframe {
+            width: 85%;
+            height: 85vw;
+        }
+    }
 }
 
-.formulario {
-    width: auto;
-    height: auto;
-    background-color: $color-secundario;
-    margin: 20px;
-    padding: 10px;
-}
+@media (min-width: 768px) {
+    .contacto {
+        align-items: center;
 
-.formulario__tipodeconsulta {
-    display: flex;
-    flex-direction: column;
-}
+        .form {
+            width: 75vw;
+        }
 
-.formulario__campos {
-    margin: 10px;
+        .mapa {
+            iframe {
+                width: 600px;
+                height: 450px;
+            }
+
+            p {
+                font-size: 1.2rem;
+                padding: 15px;
+                font-weight: 600;
+            }
+        }
+    }
 }
 
 @media (min-width: 1200px) {
-    .form {
+    .contacto {
         display: grid;
         grid-template-columns: 2, 1fr;
         grid-template-rows: 4, 1fr;
-        .formulario {
-            width: 47%;
+
+        .form {
+            width: auto;
             grid-column: 1/2;
-        }
-        .fomulario-radio{
             grid-row: 1/5;
         }
-        .fomulario-nombre{
-            grid-row: 2/5;
+    }
+
+    .mapa {
+        grid-column: 2/3;
+        grid-row: 1/4;
+
+        iframe {
+            width: 600px;
+            height: 450px;
         }
-        .fomulario-mensaje{
-            grid-row: 3/5;
-        }
-        .fomulario-mail{
-            grid-row: 4/5;
+
+        p {
+            font-size: 1.2rem;
+            padding: 15px;
+            font-weight: 600;
         }
     }
 }
