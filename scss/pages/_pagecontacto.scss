@@ -33,6 +33,11 @@
         .formulario__tipodeconsulta {
             display: flex;
             flex-direction: column;
+                p{
+                    padding: 0%;
+                    margin: 0%;
+                }
+            }
         }
 
         .formulario__campos {
@@ -50,7 +55,7 @@
             height: 85vw;
         }
     }
-}
+
 
 @media (min-width: 768px) {
     .contacto {
@@ -70,6 +75,13 @@
                 width: 85%;
                 padding: 15px;
                 font-weight: 600;
+            }
+            .formulario__tipodeconsulta{
+                p{
+                    padding: 0%;
+                    margin: 0%;
+                    font-weight: 400;
+                }
             }
         
     }

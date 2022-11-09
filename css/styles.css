@@ -87,6 +87,10 @@ h1 a {
     grid-row: 2/3;
   }
 }
+main {
+  font-family: "Abyssinica SIL", serif;
+}
+
 section {
   background-color: rgba(0, 0, 0, 0.261);
   margin: 20px 0px;
@@ -316,6 +320,7 @@ article a .tarjeta h2 {
   font-size: 1rem;
   grid-column: 2/3;
   grid-row: 2/3;
+  padding: auto;
 }
 .tarjeta__oferta .tarjeta__precio--oferta {
   font-size: 1rem;
@@ -497,15 +502,20 @@ section .scroll h2 {
   display: flex;
   flex-direction: column;
 }
-.contacto .form .formulario__campos {
+.contacto .form .formulario__tipodeconsulta p {
+  padding: 0%;
+  margin: 0%;
+}
+.contacto .formulario__campos {
   margin: 10px;
 }
-.contacto .mapa {
+
+.mapa {
   margin: 20px;
   align-items: center;
   text-align: center;
 }
-.contacto .mapa iframe {
+.mapa iframe {
   width: 85%;
   height: 85vw;
 }
@@ -525,6 +535,11 @@ section .scroll h2 {
     width: 85%;
     padding: 15px;
     font-weight: 600;
+  }
+  .contacto .formulario__tipodeconsulta p {
+    padding: 0%;
+    margin: 0%;
+    font-weight: 400;
   }
 }
 @media (min-width: 1200px) {
